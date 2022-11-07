@@ -1,0 +1,370 @@
+body {
+    background-image : url(../image/fond3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#logo{
+    position: absolute;
+    bottom: 0;
+    width: 15%;
+    width: 10%;
+}
+
+
+.play{
+    padding: 20px 60px;
+    display: flex;
+    margin: auto;
+    margin-top: 20%;
+    background-color:white ;
+    font-family: cambria;
+    font-size: 2rem;
+    color:rgb(208, 255, 0);
+    background-color: rgb(129, 0, 0);
+    border: 2px solid rgb(51, 54, 69);
+    border-radius: 3%;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    transition: 0.4s;
+}
+
+.play:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+h2{
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    color: white; 
+}
+.EnCard {
+    top: 5%;
+    right: 5%;
+    position: fixed;
+    width: 350px;
+    height: 90%;
+    background-color:rgba(55, 51, 51, 0.3);
+    border: solid rgb(187, 161, 161) 3px;
+    border-radius: 3%;
+    overflow-y: scroll;
+    scrollbar-color: dark;
+}
+
+#modify{
+    display: none;
+    margin-top: 20px;
+}
+
+select{
+    width: 100%;
+}
+#new{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#création:hover{
+    transform: scale(0.9);
+}
+
+.card{
+    display: none;
+}
+
+#C{
+    margin-top: 2px;
+    color: rgb(204, 204, 55);
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgb(112, 0, 0);
+    border: 3px grey solid;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+#M{
+    margin-top: 2px;
+    color: rgb(204, 204, 55);
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgb(112, 0, 0);
+    border: 3px grey solid;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#msgValid{
+    color: green;
+    font-weight: bold;
+    font-family: arial;
+}
+#msgRefus{
+    color: red;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#iCid{
+    width: 100%;
+}
+.chooseCharacter{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left:35%;
+    top: 27%;
+    margin-top: 2%;
+}
+
+
+
+.fight{
+    display: flex;
+    width: 100%;
+}
+.perso{
+    width: 100%;
+    height: 150px;
+    border-bottom: black solid 1px;
+    border-radius: 3%;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 0.4s;
+    opacity: 0.8;
+}
+.fight{
+    display: flex;
+
+}
+.perso:hover{
+    background-color: rgb(151, 151, 82);
+}
+.name{
+    color: yellow;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 5%;
+}
+.classe{
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    font-size: 17px;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.test{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.persoInactif{
+    display: none;
+}
+
+
+.imgIcon{
+    width: 30%;
+    display:flex;
+    float: right;
+    position: relative;
+    bottom: 50%;
+    
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+
+#btnSuppr{
+    width: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btnSuppr:hover{
+    transform: scale(1.2);
+}
+#btnEdit{
+    width: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btnEdit:hover{
+    transform: scale(1.2);
+}
+
+#newCharacter{
+    
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#newCharacter:hover{
+    transform: scale(0.9);
+}
+
+
+.container{
+    width:20%;
+    margin-left:10% ;
+    margin-top: 15%;
+    display: none;
+    
+}
+legend{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#Character{
+    width: 200px;
+}
+
+label{
+    font-family: georgia;
+    display: block;
+}
+
+/* api video */
+h1{
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+#video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+  }
+#photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top:55px ;
+    left: 250px;
+}
+
+#canvas {
+    display: none;
+}
+
+.camera {
+    width: 270px;
+    display: inline-block;
+}
+
+.output {
+    width: 340px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#startbutton {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1);
+  }
+
+.contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 760px;
+}
+
+
+
+@media (max-width:1000px){
+    #logo{
+        margin: 5% 0 5% 10%;
+        width:240px ;
+    }
+}
+@media (max-width:710px){
+    #logo{
+        margin-left: 0;
+    }
+    .container{
+        margin-left: 0;
+    }
+    .EnCard{
+        width: 40%;
+    }
+    .imgIcon{
+        width:100px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+@media (max-width:460px){
+    .EnCard{
+        width: 90%;
+        position: sticky;
+        margin-top: 5px;
+        margin-top: 70px;
+        
+    }
+    .container{
+        width: 30%;
+    }
+    #logo{
+        width: 80%;
+        margin: 0;
+    }
+    h2{
+        text-align: center;
+    }
+}
+@media(max-width:1370px){
+    #video{
+        position: relative;
+        display: block;
+    }
+    #photo{
+        position: relative  ;
+        left: 25px;
+        display: block;
+    }
+    .contentarea{
+        width: 50%;
+    }
+    #startbutton{
+        position: sticky;
+    }
+    h1{
+        font-size: 2rem;
+        width: 300px;
+        position: relative;
+        margin-top: 50px;
+    }
+}

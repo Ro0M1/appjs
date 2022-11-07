@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <img src="image/logo.png" alt="" id="logo">
+    <button onclick="start(),fullscreen()" class="play" type="submit" id="button">Commencer</button>
+    <div class="container" id="container"><fieldset><legend>Cliquez ci dessous pour créer un personnage</legend>
+        <img src="image/Créer.png" alt="" id="newCharacter" onclick="createNewChar()">
+        <div class="card" id="card">
+            <label for="name">Nom du personnage:</label>
+            <input type="text" name="name" id="name">
+            <label for="Character">Choisissez votre classe:</label>
+            <select name="Classe" id="Character">
+                <option value="Warrior" id="war">Guerrier</option>
+                <option value="Mage" id="mage">Mage</option>
+                <option value="Hunter" id="hunt">Chasseur</option>
+                <option value="Warlock" id="démo">Démoniste</option>
+                <option value="Rogue" id="rogue">Voleur</option>
+                <option value="DeathKnight" id="dk">Chevalier de la mort</option>
+            </select>
+            <div id="msgRefus"></div>
+            <div id="msgValid"></div>
+            <button type="submit" onclick="validForm()" id="C">Créer</button>
+        </div>
+    </fieldset>
+    <div class="modify" id="modify"><fieldset><legend>Modifier le nom de votre personnage</legend>
+        <label for="newName">Nouveau Nom:</label>
+        <input type="text" name="new" id="newName">
+        <button onclick="edit()" id="M">Modifier</button>
+        </fieldset>
+    </div>
+    <div class="chooseCharacter" id="chooseCharacter">
+        
+    </div>
+    <div class="contentarea">
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button>
+        </div>
+        <h1>Prend toi en photo</h1>
+        <canvas id="canvas"> </canvas>
+        <div class="output">
+            <img id="photo"/>
+        </div>
+      </div>
+    </div>        
+    <div class="EnCard" id="EnCard" style="display:none ;">
+        <h2>Liste de vos personnages</h2>
+        <div id="char"></div>  
+    </div>
+    
+        
+
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
